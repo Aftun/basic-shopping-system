@@ -30,8 +30,7 @@ public class Product {
         return this.name;
     }
 
-    // Both setters (setName and setPrice) are final to avoid security issues by overriding
-    public final void setName(String name) {
+    private void setName(String name) {
         if (name != null) {
             this.name = name;
         }
@@ -41,7 +40,7 @@ public class Product {
         return this.price;
     }
 
-    public final void setPrice(double price) {
+    private void setPrice(double price) {
         if (price > 0) {
             this.price = price;
         }
